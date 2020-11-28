@@ -60,30 +60,42 @@ namespace Interface1 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(200, 41);
+			this->button1->BackColor = System::Drawing::Color::Transparent;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Location = System::Drawing::Point(129, 209);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(116, 48);
+			this->button1->Size = System::Drawing::Size(139, 58);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"produit sous le seuil de réaprovisionnement ";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(194, 146);
+			this->button2->BackColor = System::Drawing::Color::Transparent;
+			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->Location = System::Drawing::Point(249, 67);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(116, 48);
+			this->button2->Size = System::Drawing::Size(139, 58);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"les 10 articles les plus vendu ";
-			this->button2->UseVisualStyleBackColor = true;
+			this->button2->UseVisualStyleBackColor = false;
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(194, 238);
+			this->button3->BackColor = System::Drawing::Color::Transparent;
+			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->Location = System::Drawing::Point(12, 67);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(116, 48);
+			this->button3->Size = System::Drawing::Size(139, 58);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"les 10 articles les moins vendu ";
-			this->button3->UseVisualStyleBackColor = true;
+			this->button3->UseVisualStyleBackColor = false;
 			// 
 			// Identification
 			// 
@@ -91,7 +103,7 @@ namespace Interface1 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(322, 367);
+			this->ClientSize = System::Drawing::Size(400, 422);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);

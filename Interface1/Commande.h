@@ -64,24 +64,29 @@ namespace Interface1 {
 			// 
 			// button1
 			// 
-			this->button1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.BackgroundImage")));
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button1->Location = System::Drawing::Point(73, 260);
+			this->button1->BackColor = System::Drawing::Color::Transparent;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->ForeColor = System::Drawing::Color::Red;
+			this->button1->Location = System::Drawing::Point(315, 34);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(112, 45);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Afficher ";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &Commande::button1_Click);
 			// 
 			// button2
 			// 
-			this->button2->BackColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
+			this->button2->BackColor = System::Drawing::Color::Transparent;
+			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::SystemColors::ActiveCaption;
-			this->button2->Location = System::Drawing::Point(306, 33);
+			this->button2->Location = System::Drawing::Point(466, 34);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(112, 45);
+			this->button2->Size = System::Drawing::Size(128, 45);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Supprimer";
 			this->button2->UseVisualStyleBackColor = false;
@@ -89,10 +94,12 @@ namespace Interface1 {
 			// 
 			// button3
 			// 
-			this->button3->BackColor = System::Drawing::SystemColors::ControlDark;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button3->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->button3->Location = System::Drawing::Point(23, 12);
+			this->button3->BackColor = System::Drawing::Color::Transparent;
+			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->button3->Location = System::Drawing::Point(166, 34);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(112, 45);
 			this->button3->TabIndex = 2;
@@ -102,10 +109,12 @@ namespace Interface1 {
 			// 
 			// button4
 			// 
-			this->button4->BackColor = System::Drawing::SystemColors::InactiveCaptionText;
-			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaption;
-			this->button4->Location = System::Drawing::Point(267, 291);
+			this->button4->BackColor = System::Drawing::Color::Transparent;
+			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button4->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button4->Location = System::Drawing::Point(12, 34);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(112, 45);
 			this->button4->TabIndex = 3;
@@ -115,11 +124,13 @@ namespace Interface1 {
 			// 
 			// button5
 			// 
-			this->button5->BackColor = System::Drawing::SystemColors::AppWorkspace;
+			this->button5->BackColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12.25F));
-			this->button5->Location = System::Drawing::Point(157, 175);
+			this->button5->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button5->Location = System::Drawing::Point(451, 317);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(107, 49);
+			this->button5->Size = System::Drawing::Size(165, 49);
 			this->button5->TabIndex = 4;
 			this->button5->Text = L"Quitter";
 			this->button5->UseVisualStyleBackColor = false;
@@ -131,12 +142,13 @@ namespace Interface1 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(421, 387);
+			this->ClientSize = System::Drawing::Size(616, 390);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
+			this->DoubleBuffered = true;
 			this->Name = L"Commande";
 			this->Text = L"Commande";
 			this->ResumeLayout(false);
