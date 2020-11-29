@@ -8,7 +8,9 @@ namespace Interface1 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
+	using namespace System::Data;
+	using namespace System::Data::SqlClient;
+	using namespace System::Xml;
 	/// <summary>
 	/// Description résumée de Personnel
 	/// </summary>
@@ -169,6 +171,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		MessageBoxButtons::OK, MessageBoxIcon::Error);
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	
 	MessageBox::Show("     vous ne pouvez pas Afficher pour le moemnt      ", "   Erreur ",
 		MessageBoxButtons::OK, MessageBoxIcon::Error);
 }

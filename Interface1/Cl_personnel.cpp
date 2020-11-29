@@ -1,11 +1,12 @@
 #include "Cl_personnel.h"
 void Cl_personnel::afficher()
 {
-	//lecture du element de bdd (formulaire) tableau ?! 
+	String^ constring = "Data Source=LAPTOP-PU1057KM\SQLEXPRESS;Initial Catalog=code lyoko;Integrated Security=True";
+	SqlConnection^ conDataBase = gcnew SqlConnection(constring);
+	SqlCommand^ cmdDataBase = gcnew SqlCommand("SELCET * FROM personnel", conDataBase);
 
-	//requete sql 
-
-	//ajout dans Vector 
+	conDataBase->Open();
+	SqlDataReader^ myReader = cmdDataBase->ExecuteReader();
 }
 void Cl_personnel::modifier()
 {
@@ -19,6 +20,10 @@ void Cl_personnel::ajouter()
 	//lecture de l'element du formulaire ?! 
 	//requete sql (ajouter l'element dans la base de données ) 
 	//ajout dans Vector 
+
+
+
+	
 }
 void Cl_personnel::supprimer()
 {//lecture de l'element du formulaire ?! 
