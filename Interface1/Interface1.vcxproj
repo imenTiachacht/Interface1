@@ -124,6 +124,10 @@
   <ItemGroup>
     <ClCompile Include="Calcul2.cpp" />
     <ClCompile Include="Client.cpp" />
+    <ClCompile Include="Cl_client.cpp" />
+    <ClCompile Include="Cl_commande.cpp" />
+    <ClCompile Include="Cl_personnel.cpp" />
+    <ClCompile Include="Cl_stock.cpp" />
     <ClCompile Include="Commande.cpp" />
     <ClCompile Include="Identification.cpp" />
     <ClCompile Include="MyForm.cpp" />
@@ -138,6 +142,10 @@
     <ClInclude Include="Client.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Cl_client.h" />
+    <ClInclude Include="Cl_commande.h" />
+    <ClInclude Include="Cl_personnel.h" />
+    <ClInclude Include="Cl_stock.h" />
     <ClInclude Include="Commande.h">
       <FileType>CppForm</FileType>
     </ClInclude>

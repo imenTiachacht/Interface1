@@ -1,5 +1,9 @@
 #include "MyForm.h"
-
+#include <iostream>
+#include "Commande.h"
+#include "Client.h"
+#include "Stock.h"
+#include "Personnel.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
