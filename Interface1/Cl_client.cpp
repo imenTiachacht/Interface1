@@ -23,7 +23,7 @@ void Cl_client::ajouter()
 { //sql connetion 
 	String^ constring = "Data Source=LAPTOP-PU1057KM\SQLEXPRESS;Initial Catalog=code lyoko;Integrated Security=True";
 	SqlConnection^ conDataBase = gcnew SqlConnection(constring);
-
+     
 	//lecture de l'element du formulaire ?! 
 	//requete sql (ajouter l'element dans la base de données ) 
 	//ajout dans Vector 
@@ -33,7 +33,10 @@ void Cl_client::supprimer()
 { //sql connetion 
 	String^ constring = "Data Source=LAPTOP-PU1057KM\SQLEXPRESS;Initial Catalog=code lyoko;Integrated Security=True";
 	SqlConnection^ conDataBase = gcnew SqlConnection(constring);
-	//lecture de l'element du formulaire ?! 
 	//requete sql (suppression personne ) 
+	SqlCommand^ cmdDataBase = gcnew SqlCommand("DELETE FROM Article WHERE reference_article = '" + reference + "' ", conDataBase);
+
+    //lecture de l'element du formulaire ?! 
+	
 	//ajout dans Vector 
 }
