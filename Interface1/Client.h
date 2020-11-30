@@ -157,7 +157,7 @@ namespace Interface1 {
 			this->button5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button5.BackgroundImage")));
 			this->button5->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button5->Location = System::Drawing::Point(683, 355);
+			this->button5->Location = System::Drawing::Point(692, 355);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(105, 91);
 			this->button5->TabIndex = 4;
