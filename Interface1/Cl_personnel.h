@@ -1,17 +1,35 @@
 #pragma once
 using namespace System;
 
-using namespace System::Data;
 
-using namespace System::Data::SqlClient;
-using namespace System::Xml;
 /// <summary>
-ref class Cl_personnel
+namespace NS_Composants
 {
+	ref class Cl_personnel
+	{
+	private: 
+		int ID_personnel;
+		String^ nomPER;
+		String^ prenomPER;
+		String^ supH;
+		String^ DateAmb;
+	public: 
+		Cl_personnel(void);
+		String^ SELECTByIdPersonne(void);
+		String^ INSERT(void);
+		String^ UPDATE(void);
+		String^ DELETE(void);
+		void setId_personnel(int);
+		void setNomPER(String^);
+		void setPrenomPER(String^);
+		void setSupH(String^);
+		void setDateAmb(int);
+		int getId_personnel(void);
+		String^ getNomPER( void);
+		String^ getPrenomPER(void);
+		String^ getSupH(void);
+		
 
-	void afficher();
-	void modifier();
-	void ajouter();
-	void supprimer();
-};
+	};
 
+}
