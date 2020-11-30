@@ -18,12 +18,13 @@ private:
 	String^ DateAnivCL;
 	String^ DatePremierAchat;
 public:
-		Cl_client(Void);
+		Cl_client(void);
 		String^ SELECT(void) {};
 		String^ INSERT(void) {};
 		String^ UPDATE(void) {};
 		String^ DELETE(void) {};
 		void setID(int) {};
+		void setnomCL(String^) {};
 		void setprononCL(String^) {};
 		void setadresseCL(String^) {};
 		void setadresseFAC(String^) {};

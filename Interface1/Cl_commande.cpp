@@ -53,7 +53,7 @@ namespace NS_Composants
 	}
 	void Cl_commande::setDateEmi(String^ DateEmi)
 	{
-		//if (IdPersonne > 0)this->id_personne = IdPersonne;
+		//if (IdPersonne > 0)t//if (IdAdresse > 0)this->id_adresse = IdAdresse;his->id_personne = IdPersonne;
 	}
 	void Cl_commande::setId_client(int Id_client)
 	{
