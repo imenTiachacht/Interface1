@@ -122,23 +122,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Calcul2.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Cl_client.cpp" />
     <ClCompile Include="Cl_commande.cpp" />
     <ClCompile Include="Cl_personnel.cpp" />
     <ClCompile Include="Cl_stock.cpp" />
     <ClCompile Include="Commande.cpp" />
-    <ClCompile Include="Identification.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="Personnel.cpp" />
     <ClCompile Include="Statistique.cpp" />
     <ClCompile Include="Stock.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Calcul2.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="Client.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -147,9 +142,6 @@
     <ClInclude Include="Cl_personnel.h" />
     <ClInclude Include="Cl_stock.h" />
     <ClInclude Include="Commande.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="Identification.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyForm.h">
@@ -164,32 +156,6 @@
     <ClInclude Include="Stock.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Calcul2.resx">
-      <DependentUpon>Calcul2.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Client.resx">
-      <DependentUpon>Client.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Commande.resx">
-      <DependentUpon>Commande.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Identification.resx">
-      <DependentUpon>Identification.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyForm.resx">
-      <DependentUpon>MyForm.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Personnel.resx">
-      <DependentUpon>Personnel.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Statistique.resx">
-      <DependentUpon>Statistique.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Stock.resx">
-      <DependentUpon>Stock.h</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
