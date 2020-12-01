@@ -23,12 +23,12 @@ namespace NS_Composants
 		void setNomPER(String^);
 		void setPrenomPER(String^);
 		void setSupH(String^);
-		void setDateAmb(int);
+		void setDateAmb(String^);
 		int getId_personnel(void);
 		String^ getNomPER( void);
 		String^ getPrenomPER(void);
 		String^ getSupH(void);
-		
+		String^ getDateAmb(void);
 
 	};
 

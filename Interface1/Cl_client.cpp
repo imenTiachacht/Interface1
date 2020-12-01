@@ -4,6 +4,7 @@ namespace NS_Compsants {
 	Cl_client::Cl_client(void) {
 		this->ID=-1;
 		this->nomCL="Rien";
+		this->prononCL = "Rien";
 		this->adresseCL = "Rien";
 		this->adresseFAC = "Rien";
 		this->DateAnivCL = "Rien";
